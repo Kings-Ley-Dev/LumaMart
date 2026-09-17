@@ -1,0 +1,3 @@
+'use client'
+import Link from 'next/link'; import { Store, ExternalLink } from 'lucide-react'
+export default function StoreNavbar(){return <header className="h-[72px] border-b border-slate-200 bg-white flex items-center justify-between px-4 sm:px-7 shrink-0"><Link href="/" className="text-2xl font-bold"><span className="text-violet-600">luma</span>mart<span className="text-violet-600">.</span></Link><div className="flex items-center gap-3"><span className="hidden sm:inline text-xs text-slate-500">Seller workspace</span><Link href="/shop/northstargoods" className="grid size-9 place-items-center rounded-full bg-slate-100 text-slate-600" title="View storefront"><ExternalLink size={17}/></Link></div></header>}

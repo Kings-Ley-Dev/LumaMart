@@ -1,0 +1,3 @@
+'use client'
+import { useEffect,useState } from 'react'; import Link from 'next/link'; import { ArrowRight } from 'lucide-react'; import Loading from '../Loading'; import SellerNavbar from './StoreNavbar'; import SellerSidebar from './StoreSidebar'; import { dummyStoreData } from '@/assets/assets'
+export default function StoreLayout({children}){const [loading,setLoading]=useState(true);useEffect(()=>setLoading(false),[]);if(loading)return <Loading/>;return <div className="min-h-screen bg-slate-50 flex flex-col"><SellerNavbar/><div className="flex flex-1 flex-col md:flex-row"><SellerSidebar storeInfo={dummyStoreData}/><main className="flex-1 min-w-0 p-4 sm:p-6 lg:p-10">{children}</main></div></div>}

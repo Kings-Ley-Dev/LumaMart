@@ -1,0 +1,3 @@
+'use client'
+import Link from 'next/link'; import { ShieldCheck } from 'lucide-react'
+export default function AdminNavbar(){return <header className="h-[72px] border-b border-slate-200 bg-white flex items-center justify-between px-4 sm:px-7 shrink-0"><Link href="/" className="text-2xl font-bold"><span className="text-violet-600">luma</span>mart<span className="text-violet-600">.</span></Link><div className="flex items-center gap-3"><span className="hidden sm:inline text-xs text-slate-500">Marketplace control room</span><span className="grid size-9 place-items-center rounded-full bg-violet-100 text-violet-700"><ShieldCheck size={18}/></span></div></header>}

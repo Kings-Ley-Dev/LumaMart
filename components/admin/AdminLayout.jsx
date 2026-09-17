@@ -1,0 +1,3 @@
+'use client'
+import Link from 'next/link'; import { ArrowRight } from 'lucide-react'; import AdminNavbar from './AdminNavbar'; import AdminSidebar from './AdminSidebar'
+export default function AdminLayout({children}){const authorized=true; if(!authorized)return <div className="min-h-screen grid place-items-center text-center p-6"><h1 className="text-3xl font-semibold">Access restricted</h1><Link href="/" className="mt-5 inline-flex items-center gap-2 rounded-full bg-slate-950 text-white px-5 py-3">Back to shop <ArrowRight size={16}/></Link></div>;return <div className="min-h-screen bg-slate-50 flex flex-col"><AdminNavbar/><div className="flex flex-1 flex-col md:flex-row"><AdminSidebar/><main className="flex-1 min-w-0 p-4 sm:p-6 lg:p-10">{children}</main></div></div>}

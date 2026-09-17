@@ -1,0 +1,3 @@
+'use client'
+import Title from './Title'; import ProductCard from './ProductCard'; import { useSelector } from 'react-redux'
+export default function BestSelling(){const products=useSelector(s=>s.product.list);const items=products.slice().sort((a,b)=>(b.rating?.length||0)-(a.rating?.length||0)).slice(0,8);return <section className="bg-slate-50 border-y border-slate-100"><div className="page-shell py-16 sm:py-20"><Title title="Customer favourites" description="Popular products across the LumaMart collection." href="/shop"/><div className="mt-8 grid grid-cols-2 sm:flex sm:flex-wrap gap-5 sm:justify-between">{items.map(p=><ProductCard key={p.id} product={p}/>)}</div></div></section>}

@@ -1,0 +1,3 @@
+'use client'
+import Title from './Title'; import ProductCard from './ProductCard'; import { useSelector } from 'react-redux'
+export default function LatestProducts(){const products=useSelector(s=>s.product.list);const items=products.slice().sort((a,b)=>new Date(b.createdAt)-new Date(a.createdAt)).slice(0,4);return <section className="page-shell py-16 sm:py-20"><Title title="New in store" description="Fresh additions selected for the week." href="/shop"/><div className="mt-8 grid grid-cols-2 sm:flex gap-5 sm:justify-between">{items.map(p=><ProductCard key={p.id} product={p}/>)}</div></section>}
