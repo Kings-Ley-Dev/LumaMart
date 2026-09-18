@@ -1,4 +1,4 @@
-import brand_logo from "./luma/logo.svg"
+import brand_logo from "./luma/logo.svg" 
 import store_logo from "./luma/store.svg"
 import upload_art from "./luma/upload.svg"
 import { ClockFadingIcon, HeadsetIcon, SendIcon } from "lucide-react";
