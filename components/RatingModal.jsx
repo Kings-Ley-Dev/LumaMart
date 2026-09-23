@@ -1,6 +1,6 @@
-'use client'
+'use client' 
 
-import { Star } from 'lucide-react';
+import { Star } from 'lucide-react'; 
 import React, { useState } from 'react'
 import { XIcon } from 'lucide-react';
 import toast from 'react-hot-toast';
