@@ -1,5 +1,5 @@
-'use client'
-import Hero from "@/components/Hero";
+'use client'  
+import Hero from "@/components/Hero";  
 import LatestProducts from "@/components/LatestProducts";
 import BestSelling from "@/components/BestSelling";
 import OurSpecs from "@/components/OurSpec";
