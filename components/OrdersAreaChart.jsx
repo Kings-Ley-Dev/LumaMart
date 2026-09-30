@@ -1,9 +1,9 @@
 'use client'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
 
-export default function OrdersAreaChart({ allOrders }) {
+export default function OrdersAreaChart({ allOrders }) {  
 
-    // Group orders by date
+    // Group orders by date  
     const ordersPerDay = allOrders.reduce((acc, order) => {
         const date = new Date(order.createdAt).toISOString().split('T')[0] // format: YYYY-MM-DD
         acc[date] = (acc[date] || 0) + 1
