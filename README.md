@@ -1,6 +1,6 @@
-# Welcome to LumaMart
+# Welcome to LumaMart 
 
-LumaMart is a modern multi-store commerce demo built with Next.js, React, Redux Toolkit, Tailwind CSS and Prisma.
+LumaMart is a modern multi-store commerce demo built with Next.js, React, Redux Toolkit, Tailwind CSS and Prisma.  
 
 ## Run locally
 
