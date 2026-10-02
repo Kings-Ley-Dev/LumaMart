@@ -4,8 +4,8 @@ LumaMart is a modern multi-store commerce demo built with Next.js, React, Redux 
 
 ## Run locally
 
-```bash
-npm install
+```bash 
+npm install 
 npm run dev
 ```
 
