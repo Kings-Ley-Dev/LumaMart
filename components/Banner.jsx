@@ -7,7 +7,7 @@ export default function Banner() {
   const [open, setOpen] = React.useState(true)
   const claim = async () => {
     try { await navigator.clipboard.writeText('LUMA20') } catch {}
-    toast.success('Code LUMA20 copied')
+    toast.success('Code LUMA20 copied')  
   }
   if (!open) return null
   return (
