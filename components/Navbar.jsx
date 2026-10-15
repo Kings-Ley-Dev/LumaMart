@@ -2,8 +2,8 @@
 import { Search, ShoppingBag, Menu, X, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useState } from "react"; 
+import { useSelector } from "react-redux";  
 
 const Navbar = () => {
   const router = useRouter();
