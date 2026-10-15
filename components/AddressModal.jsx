@@ -9,7 +9,7 @@ const AddressModal = ({ setShowAddressModal }) => {
         name: '',
         email: '',
         street: '',
-        city: '',
+        city: '',  
         state: '',
         zip: '',
         country: '',
