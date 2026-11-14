@@ -15,7 +15,7 @@ The project uses demo data from `assets/assets.js`, so the interface can be expl
 
 ## Main routes
 
-- `/` storefront home
+- `/` storefront home  
 - `/shop` product catalog
 - `/product/[productId]` product details
 - `/cart` shopping cart and demo checkout
